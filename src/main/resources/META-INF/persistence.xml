@@ -6,6 +6,8 @@
 
     <persistence-unit name="lionPU" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>org.example.jpa.User</class> <!-- 패키지 명, 클래스 명이 일치해야 함 -->
+        <class>org.example.jpa.Product</class> <!-- 패키지 명, 클래스 명이 일치해야 함 -->
 
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
@@ -15,10 +17,10 @@
 
 
 
-            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
-            <property name="hibernate.hbm2ddl.auto" value="update"/>
-            <property name="hibernate.show_sql" value="true"/>
-            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>     <!-- 필수 설정, 사용하는 DB에 맞춰서 hibernate dialect를 알려줘야함 -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>    <!-- DDL auto : 테이블 생성에 관련된 옵션 (운영중에 테이블 생성 같은거로 설정하면 안됨 / 데이터 다 날아감)-->
+            <property name="hibernate.show_sql" value="true"/>      <!-- 내가 만든 sql을 볼 수 있는 옵션 -->
+            <property name="hibernate.format_sql" value="true"/>    <!-- SQL 보여줄 때 포맷팅해서 보여주는 옵션 -->
         </properties>
     </persistence-unit>
 </persistence>
