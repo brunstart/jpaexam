@@ -8,6 +8,11 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>org.example.jpa.User</class> <!-- 패키지 명, 클래스 명이 일치해야 함 -->
         <class>org.example.jpa.Product</class> <!-- 패키지 명, 클래스 명이 일치해야 함 -->
+        <class>org.example.jpa.School</class>
+        <class>org.example.jpa.Student</class>
+        <class>org.example.jpa.practice.Author</class>
+        <class>org.example.jpa.practice.Book</class>
+
 
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
