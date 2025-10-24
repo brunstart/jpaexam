@@ -12,6 +12,10 @@
         <class>org.example.jpa.Student</class>
         <class>org.example.jpa.practice.Author</class>
         <class>org.example.jpa.practice.Book</class>
+        <class>org.example.jpa.Person</class>
+        <class>org.example.jpa.Passport</class>
+        <class>org.example.jpa.Project</class>
+        <class>org.example.jpa.Employee</class>
 
 
         <properties>
