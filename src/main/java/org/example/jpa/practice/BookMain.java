@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.example.jpa.JPAUtil;
 
 @Slf4j
-public class AuthorMain {
+public class BookMain {
 
     private static void find() {
         EntityManager em = JPAUtil.getEntityManagerFactory().createEntityManager();
